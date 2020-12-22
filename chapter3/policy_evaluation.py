@@ -1,12 +1,13 @@
 import numpy as np
 
 
-class Policy_Evaluation:
+class PolicyEvaluation:
 
     def __init__(self):
         pass
 
-    def policy_evaluation(self, pi, P, gamma=1.0, theta=1e-10):
+    @staticmethod
+    def policy_evaluation(pi, P, gamma=1.0, theta=1e-10):
 
         num_states = len(P)
 
